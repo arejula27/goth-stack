@@ -29,3 +29,12 @@ To get started with the GoTH stack, follow these steps:
     ```shell
     make css
     ````
+
+5. If you prefer using air for live reload instead of rebuilding the app with each modification you can run:
+    ```shell
+    make dev
+    ````
+To do this, you must make sure you have Air installed:
+    ```shell
+    go install github.com/cosmtrek/air@latest
+    ````
