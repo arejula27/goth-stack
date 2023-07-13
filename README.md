@@ -34,7 +34,7 @@ To get started with the GoTH stack, follow these steps:
     ```shell
     make dev
     ````
-To do this, you must make sure you have Air installed:
-    ```shell
+   For installing air just execute:
+   ```shell
     go install github.com/cosmtrek/air@latest
     ````
