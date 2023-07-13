@@ -556,6 +556,10 @@ video {
   }
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -625,6 +629,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
