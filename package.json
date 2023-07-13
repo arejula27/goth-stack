@@ -1,5 +1,5 @@
 {
-  "name": "The bored stack",
+  "name": "The goth stack",
   "scripts": {
     "css": "tailwindcss -i ./assets/app.css -o ./public/assets/app.css --watch"
   },
