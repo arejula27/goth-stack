@@ -35,7 +35,7 @@ func initRoutes(app *fiber.App) {
 	
 
 	app.Get("/", handlers.HandleHome)
-	app.Get("/bored", handlers.HandleBored)
+	app.Get("/about", handlers.HandleAbout)
 	
 
 	app.Use(handlers.NotFoundMiddleware)
