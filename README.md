@@ -1,2 +1,5 @@
 # The bored stack
-Programming stack for the no bullshit builder.
+Programming stack formed by:
+    - Golang
+    - Htmx
+    - Tailwind
