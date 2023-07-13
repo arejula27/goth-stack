@@ -32,11 +32,11 @@ func main() {
 func initRoutes(app *fiber.App) {
 	app.Static("/public", "./public")
 
-	app.Use(handlers.FlashMiddleware)
+	
 
 	app.Get("/", handlers.HandleHome)
 	app.Get("/bored", handlers.HandleBored)
-	app.Get("/flash", handlers.HandleFlash)
+	
 
 	app.Use(handlers.NotFoundMiddleware)
 }
