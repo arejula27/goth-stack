@@ -1,4 +1,4 @@
-module github.com/anthdm/bs
+module github.com/arejula27/bs
 
 go 1.20
 

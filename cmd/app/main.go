@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/anthdm/bs/handlers"
-	"github.com/anthdm/bs/util"
+	"github.com/arejula27/bs/handlers"
+	"github.com/arejula27/bs/util"
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
 )

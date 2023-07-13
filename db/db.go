@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/anthdm/bs/util"
+	"github.com/arejula27/bs/util"
 	_ "github.com/lib/pq"
 
 	"github.com/uptrace/bun"
