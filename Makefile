@@ -1,5 +1,5 @@
 build-app:
-	@go build -o bin/app ./cmd/app/
+	@go build -o bin/app ./app/
 
 css: 
 	@npm run css 
