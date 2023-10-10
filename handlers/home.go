@@ -1,15 +1,18 @@
 package handlers
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"net/http"
+
+	"github.com/labstack/echo/v4"
 )
 
-func HandleHome(c *fiber.Ctx) error {
-	return c.Render("home/index", fiber.Map{})
+func PublicHandler(c echo.Context) error {
+	// User ID from path `users/:id`
+
+	return c.HTML(http.StatusOK, "<div><a href=http://localhost:3000/admin>Login</a>")
 }
 
-func HandleAbout(c *fiber.Ctx) error {
-	return c.Render("home/about", fiber.Map{})
+func PrivateHandler(c echo.Context) error {
+	// User ID from path `users/:id`
+	return c.String(http.StatusOK, "Hello, Admin!")
 }
-
-

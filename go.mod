@@ -1,11 +1,23 @@
-module github.com/arejula27/bs
+module github.com/arejula27/myapp
 
 go 1.20
 
 require (
 	github.com/gofiber/fiber/v2 v2.47.0
 	github.com/gofiber/template/django/v3 v3.1.4
-	github.com/joho/godotenv v1.5.1
+	github.com/labstack/echo/v4 v4.11.1
+)
+
+require (
+	github.com/caarlos0/env/v6 v6.10.1 // indirect
+	github.com/caarlos0/env/v9 v9.0.0 // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
+	github.com/joho/godotenv v1.5.1 // indirect
+	github.com/labstack/gommon v0.4.0 // indirect
+	github.com/valyala/fasttemplate v1.2.2 // indirect
+	golang.org/x/net v0.12.0 // indirect
+	golang.org/x/text v0.11.0 // indirect
+	golang.org/x/time v0.3.0 // indirect
 )
 
 require (
@@ -36,7 +48,7 @@ require (
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
-	golang.org/x/crypto v0.9.0 // indirect
-	golang.org/x/sys v0.9.0 // indirect
+	golang.org/x/crypto v0.11.0 // indirect
+	golang.org/x/sys v0.10.0 // indirect
 	mellium.im/sasl v0.3.1 // indirect
 )
