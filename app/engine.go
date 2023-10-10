@@ -2,26 +2,15 @@ package main
 
 import (
 	"html/template"
-	"os"
-	"path/filepath"
+	"io"
 
-	"github.com/gofiber/template/django/v3"
+	"github.com/labstack/echo/v4"
 )
 
-func createEngine() *django.Engine {
-	engine := django.New("./views", ".html")
-	engine.Reload(true)
-	engine.AddFunc("css", func(name string) (res template.HTML) {
-		filepath.Walk("public/assets", func(path string, info os.FileInfo, err error) error {
-			if err != nil {
-				return err
-			}
-			if info.Name() == name {
-				res = template.HTML("<link rel=\"stylesheet\" href=\"/" + path + "\">")
-			}
-			return nil
-		})
-		return
-	})
-	return engine
+type Template struct {
+	templates *template.Template
+}
+
+func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
+	return t.templates.ExecuteTemplate(w, name, data)
 }
